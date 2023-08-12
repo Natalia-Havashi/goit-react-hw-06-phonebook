@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/Contacts/slice';
 
@@ -19,11 +19,4 @@ export const Contact = ({ contact }) => {
   );
 };
 
-Contact.propTypes = {
-  contact: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    number: PropTypes.string.isRequired,
-  }).isRequired,
-  deleteContact: PropTypes.func.isRequired,
-};
+
